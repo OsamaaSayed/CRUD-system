@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud System</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container p-5 my-5">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="form-inputs ">
+                        <div class="input-gp mb-3">
+                            <label for="productName">Product Name</label>
+                            <input id="productName" type="text" class="form-control">
+                            <div id="nameAlert" class="alert alert-danger d-none">at least 3 char</div>
+                        </div>
+                        <div class="input-gp mb-3">
+                            <label for="productPrice">Product Price</label>
+                            <input id="productPrice" type="number" class="form-control">
+                            <div id="priceAlert" class="alert alert-danger d-none">at least 1 number</div>
+                        </div>
+                        <div class="input-gp mb-3">
+                            <label for="productCategory">Product Category</label>
+                            <input id="productCategory" type="text" class="form-control">
+                            <div id="categoryAlert" class="alert alert-danger d-none">at least 4 char</div>
+                        </div>
+                        <div class="input-gp mb-3">
+                            <label for="productDescription">Product Description</label>
+                            <textarea id="productDescription" class="form-control" cols="15" rows="1"></textarea>
+                            <div id="descriptionAlert" class="alert alert-danger d-none">at least 4 char</div>
+                        </div>
+                        <button id="submitBtn" class="btn btn-success mb-3" disabled>Add Product</button>
+                    </div>
+
+                    <div class="data">
+                        <input id="searchInput" class="form-control my-4" type="text" placeholder="search..">
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No.</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="tableBody">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
